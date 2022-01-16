@@ -6,7 +6,7 @@ from cvzone.HandTrackingModule import HandDetector
 import cvzone
 import requests
 
-
+blynk_auth = '' # wenter your blynk auth
 cap2 = cv2.VideoCapture(1)
 cap2.set(3, 1280)
 cap2.set(4, 720)
@@ -52,7 +52,7 @@ def get_frame():
                         cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), cv2.FILLED)
                         print('correct completed')
                         try:
-                            requests.get('http://188.166.206.43/Xhi9PCKQtq0deTV0zM9OxuRVcHSu5aMR/update/V1?value=0')
+                            requests.get(f'http://188.166.206.43/{blynk_auth}/update/V1?value=0')
                             print('success traffic light changed')
                             
                         except: print('error sending the data')
@@ -61,7 +61,7 @@ def get_frame():
                         cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), cv2.FILLED)
                         print('correct completed')
                         try:
-                            requests.get('http://188.166.206.43/Xhi9PCKQtq0deTV0zM9OxuRVcHSu5aMR/update/V1?value=1')
+                            requests.get(f'http://188.166.206.43/{blynk_auth}/update/V1?value=1')
                             print('success traffic light changed')
                             
                         except: print('error sending the data')
@@ -70,7 +70,7 @@ def get_frame():
                         cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), cv2.FILLED)
                         print('correct completed')
                         try:
-                            requests.get('http://188.166.206.43/Xhi9PCKQtq0deTV0zM9OxuRVcHSu5aMR/update/V2?value=0')
+                            requests.get(f'http://188.166.206.43/{blynk_auth}/update/V2?value=0')
                             print('success traffic light changed')
                             
                         except: print('error sending the data')
@@ -79,7 +79,7 @@ def get_frame():
                         cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), cv2.FILLED)
                         print('correct completed')
                         try:
-                            requests.get('http://188.166.206.43/Xhi9PCKQtq0deTV0zM9OxuRVcHSu5aMR/update/V2?value=1')
+                            requests.get(f'http://188.166.206.43/{blynk_auth}/update/V2?value=1')
                             print('success traffic light changed')
                             
                         except: print('error sending the data')
@@ -88,7 +88,7 @@ def get_frame():
                         cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), cv2.FILLED)
                         print('correct completed')
                         try:
-                            requests.get('http://188.166.206.43/Xhi9PCKQtq0deTV0zM9OxuRVcHSu5aMR/update/V3?value=0')
+                            requests.get(f'http://188.166.206.43/{blynk_auth}/update/V3?value=0')
                             print('success traffic light changed')
                             
                         except: print('error sending the data')
@@ -97,7 +97,7 @@ def get_frame():
                         cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), cv2.FILLED)
                         print('correct completed')
                         try:
-                            requests.get('http://188.166.206.43/Xhi9PCKQtq0deTV0zM9OxuRVcHSu5aMR/update/V3?value=1')
+                            requests.get(f'http://188.166.206.43/{blynk_auth}/update/V3?value=1')
                             print('success traffic light changed')
                             
                         except: print('error sending the data')
