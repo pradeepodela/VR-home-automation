@@ -26,7 +26,7 @@ int toggleState_4 = 1; //Define integer to remember the toggle state for relay 4
 
 int wifiFlag = 1;
 
-#define AUTH "Xhi9PCKQtq0deTV0zM9OxuRVcHSu5aMR"                 // You should get Auth Token in the Blynk App.  
+#define AUTH "XXXXXXXX"                 // You should get Auth Token in the Blynk App.  
 #define WIFI_SSID "pradeep"             //Enter Wifi Name
 #define WIFI_PASS "2446h7e2"         //Enter wifi Password
 
